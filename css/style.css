@@ -1,0 +1,77 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.my-product {
+  margin-top: 90px;
+}
+.shop {
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  .shop span {
+    position: absolute;
+    top: -13px;
+    right:8px;
+    color: rgb(45, 45, 45);
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  .cart{
+    background-color: #fff;
+    position: fixed;
+    top: 6%;
+    right: 2px;
+    width: 20rem;
+    height: 70vh;
+    z-index: 3;
+    border-radius: 10px;
+    transition:all 0.5s;
+    display: none;
+    border:2px solid gray ;
+  }
+
+  .active .cart{
+  display: block;
+}
+
+  .cart h3{
+    color: #0728FA;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 20px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.cart .check{
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cart .check div{
+    background-color: #0728FA;
+    width: 90%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.cart .check #initialvalue{
+    background-color: #0728FA;
+    color: #fff;
+}
+.cart .check .close{
+    background-color: rgb(158, 157, 157);
+    color: #fff;
+}

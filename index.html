@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <meta charset="UTF-8">
+         <!-- Fonts Aw icon -->
+         <link rel="stylesheet" href="CSS/all.min.css">
+         <!-- arrange the elements naturally and tidy on the page -->
+         <link rel="stylesheet" href="CSS/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+
+    </head>
+    <body>
+            <!-- -------------------Start Navbar Section -->
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light " data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                    </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Service</a>
+                                <a class="dropdown-item" href="#">Skills</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Contact Us</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            </ul>
+                            <div class="shop text-primary mr-5">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="value text-light">0</span>
+                            </div>
+                
+                            <div class="cart">
+                                <h3>My Products</h3>
+                                <ul id="my-all">
+                                </ul>
+                                <div class="check">
+                                    <div id="initialvalue">0</div>
+                                    <div class="close">Close</div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary  btn-sm mr-2">Sign Up</button>
+                            <button type="button" class="btn btn-secondary btn-sm ">Log in</button>
+                        </div>
+                </div>
+              </nav>       
+           
+            <!-- ----------------------End Navbar Section----------------------------- -->
+            <!-- -----Start Product Section -->
+            <main class="container vh-1000 " >
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-product ">
+                    <div class="col mb-3 product" price="150">
+                        <div class="card"  style="width: 18rem;">
+                            <img class="rounded " src="Image/dark-glass-bottle-with-single-liquid-drop-generative-ai.jpg" alt="dessert image" height="300px">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title d-flex justify-content-start  fw-bold">Perfume</h5>
+                                <p  class="card-text d-flex justify-content-start  fw-bold">The Price: 150$</p>
+                                <button class="btn btn-primary add-item">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------- -->
+                    <div class="col mb-3 product" price="200">
+                        <div class="card"  style="width: 18rem;">
+                            <img class="rounded " src="Image/elegant-watch-with-silver-golden-chain-isolated.jpg" alt="dessert image" height="300px">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title d-flex justify-content-start  fw-bold">Watch</h5>
+                                <p  class="card-text d-flex justify-content-start  fw-bold">The Price: 200$</p>
+                                <button class="btn btn-primary add-item">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------------------------------------- -->
+                    <div class="col mb-3 product" price="100">
+                        <div class="card"  style="width: 18rem;">
+                            <img class="rounded " src="Image/graphic-tshirt-trendy-design-mockup-presented-wooden-hanger-with-sapce-your-test.jpg" alt="dessert image" height="300px">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title d-flex justify-content-start  fw-bold">T-shirt</h5>
+                                <p  class="card-text d-flex justify-content-start  fw-bold">The Price: 100$</p>
+                                <button class="btn btn-primary add-item">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------------ -->
+                    <div class="col mb-3 product" price="400">
+                        <div class="card"  style="width: 18rem;">
+                            <img class="rounded " src="Image/levitating-music-headphones-display.jpg" alt="dessert image" height="300px">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title d-flex justify-content-start  fw-bold">Earphone</h5>
+                                <p  class="card-text d-flex justify-content-start  fw-bold">The Price: 400$</p>
+                                <button class="btn btn-primary add-item">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------------ -->
+                    <div class="col mb-3 product" price="250">
+                        <div class="card"  style="width: 18rem;">
+                            <img class="rounded " src="Image/pair-trainers.jpg" alt="dessert image" height="300px">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title d-flex justify-content-start  fw-bold">Shoes</h5>
+                                <p  class="card-text d-flex justify-content-start  fw-bold">The Price: 250$</p>
+                                <button class="btn btn-primary add-item">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------- -->
+                    <div class="col mb-3 product" price="280">
+                        <div class="card"  style="width: 18rem;">
+                            <img class="rounded " src="Image/t7g5_voeu_210929.jpg" alt="dessert image" height="300px">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title d-flex justify-content-start  fw-bold">Skirt</h5>
+                                <p  class="card-text d-flex justify-content-start  fw-bold">The Price: 280$</p>
+                                <button class="btn btn-primary add-item">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------- -->
+                    <div class="col mb-3 product" price="50">
+                        <div class="card"  style="width: 18rem;">
+                            <img class="rounded " src="Image/7492664.jpg" alt="dessert image" height="300px">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title d-flex justify-content-start  fw-bold">Book</h5>
+                                <p  class="card-text d-flex justify-content-start  fw-bold">The Price: 50$</p>
+                                <button class="btn btn-primary add-item">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------------------------------------- -->
+                    <div class="col mb-3 product" price="500">
+                        <div class="card"  style="width: 18rem;">
+                            <img class="rounded " src="Image/t5o9_e8ol_210601.jpg" alt="dessert image" height="300px">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title d-flex justify-content-start  fw-bold">Jacket</h5>
+                                <p  class="card-text d-flex justify-content-start  fw-bold">The Price: 500$</p>
+                                <button class="btn btn-primary add-item">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------------------- -->
+                    <div class="col mb-3 product" price="270">
+                        <div class="card"  style="width: 18rem;">
+                            <img class="rounded " src="Image/pfvq_k0cr_210929.jpg" alt="dessert image" height="300px">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title d-flex justify-content-start  fw-bold">Pants</h5>
+                                <p  class="card-text d-flex justify-content-start  fw-bold">The Price: 270$</p>
+                                <button class="btn btn-primary add-item">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+      
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-3.7.0.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
